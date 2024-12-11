@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<title>さいのつき</title>
+<style>
+*{margin:0;padding: 0;font-size: 14px;font-family : 'メイリオ',Meiryo,Osaka,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ＭＳ Ｐゴシック','MS PGothic',sans-serif;}
+body{width: 100%;margin: 0;padding: 0;background-color: #f7f7f7;position: relative;}
+a{color: #666666;}
+a:hover{color: #CD0000;}
+h1{font-size: 21px;color: #666666;margin: 0px;padding: 0px;border-bottom: 1px solid #CCCCCC;}
+h2{font-size: 16px;color: #666666;margin: 5px;padding: 50px 0 0 0;border-bottom: 1px dotted #CCCCCC;}
+label{transition: all 0.2s;}
+#toggle{display: none;}
+#label_toggle{display: block;width: 100px;text-align: center;padding: 0;border: 2px solid #CD0000;background-color: #FFFFFF;color: #CD0000;border-radius: 15px;position: fixed;top: 10px;right: 10px;z-index: 1005;}
+#label_toggle:hover{background-color:#CD0000;color:#FFFFFF;}
+header{display: block;width: 0px;height: 100%;position: fixed;background-color: #FFFFFF;border-left: 1px solid #CCCCCC;z-index: 2;top: 0;right: 0;overflow-y: auto;overflow-x: hidden;transition: all 0.2s;padding: 50px 0 0 0;box-sizing: border-box;}
+#toggle:checked + header{width: 200px;}
+header label{display: block;width: 180px;margin:0 5px;padding: 5px;border-bottom: 1px dotted #EFEFEF;}
+header label input[type="checkbox"]{margin-right: 5px;}
+label:hover{cursor:pointer;background-color: #EFEFEF;}
+.wrapper{display: block;width: calc(100% - 30px);max-width: 1100px;padding: 30px 15px 100px 15px;margin: 0 AUTO;overflow: hidden;position: relative;background-color: #FFFFFF;}
+/* ログ部分 */
+dl{display: block;margin: 0;padding: 3px;box-sizing: border-box;}
+dl::after{display: block;content: "";clear: both;}
+dt{display: block;font-size: 0.8em;font-weight: bold;float: left;width: 100px;margin: 0;padding: 5px 5px;text-align: right;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+dd{display: block;width: calc(100% - 120px);margin: 0;padding: 2px;float: right;line-height: 1.8em;}
+.zatsudan{width: 95%;margin: 0 0 0 AUTO;background:#f7f7f7;border-left:1px solid #CCCCCC;}
+.other{background-color:#fff7ef;}
+.secret{width: 98%;margin: 0 0 0 AUTO;border-left:3px solid #CCCCCC;}
+.group{background:#f9f9f9;border-left:1px solid #CCCCCC;}
+@media (max-width:480px){
+  dt{display: inline-block;float: none;width: calc(100% - 6px);margin: 0;padding: 3px 0 0 3px;text-align: left;}
+  dd{display: inline-block;width: calc(100% - 6px);padding: 3px;float: none;}
+}
+</style>
+<style>
+
+</style>
+</head>
+<body>
+<label for="toggle" id="label_toggle">表示/非表示</label>
+<input type="checkbox" name="toggle" id="toggle">
+<header>
+<label>▽ 非表示にするタブ</label>
+<label for="main"><input type="checkbox" onClick="Hide(this)" class="checkbox" id="main">メイン</label>
+<label for="zatsudan"><input type="checkbox" onClick="Hide(this)" class="checkbox" id="zatsudan">雑談</label>
+
+</header>
+<div class="wrapper">
+<h1>さいのつき</h1>
+<h2 id="day1">さいのつき</h2>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>ふわふわとまどろんだ意識。<br>それは心地よくて今まで眠っていたのだろうと確信できる。<br>目を覚ますのが億劫で、けれど目の端から何故か涙がぽろぽろと零れて瞼から溢れた雫により瞳を開かなければならなかった。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>涙でぼやけた視界は青っぽくて指で雫を拾えば瞬きの次に明瞭になった先にあったのは無機質な空間だった。<br>見知らぬ場所で目覚めたことによる SANc（0/1） </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>1d100&lt;=66 【正気度ロール】 (1D100&lt;=66) ＞ 38 ＞ 成功</dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>自分はソファに座っていた。狭い通路を挟んで目の前には壁に備え付けられたソファがある。<br>壁は壁ではなく、大きな窓があり天井からは丸いつり革が下がっていた。 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>CCB&lt;=70 【アイデア】 (1D100&lt;=70) ＞ 61 ＞ 成功</dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>ここは電車の車両内なのではないかと察することが出来る。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>ハッ、と視界の中にあるものを認識すれば肩の重さに気が付く。<br>隣を見れば彩波が自分の肩に頭を載せて寝ていた。 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>彩波ちゃん、無事かしら？ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>小声で話しかけます </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>んん……ひかりさん……？ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>彩波は蕩けた瞳を何度か擦って目を開くことだろう。 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>辺りの様子がいつもの違うの。でも、彩波ちゃんが目を覚まして良かったわ。おはよう、彩波ちゃん </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>にへへ……おはよぉひかりさん。そうだね、ここは……電車の中かな。どうしてこんなところにいるんだろ </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>私たち、お出掛けの途中で寝過ごしてしまったかしら…… </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>ん〜、きっとそうかも　 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>(彩波ちゃんに何かあってはいけないわ、何か辺りの情報をもっと得られないかしら……) </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>CCB&lt;=80 【聞き耳】 (1D100&lt;=80) ＞ 74 ＞ 成功</dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>カタン、カタンと一定のリズムが刻まれ、気を付けて歩かなければ転けてしまいそうだ。<br>この空間は一定方向へ進行しているのではないか。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>❚ 一両目<br>探索可能場所<br>（車両全体/窓/中吊り広告） </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>どこかへ走っているみたいね…… 景色から分かるかしら？ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>窓に目星とかふれますか？ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>ガラスの外は暗く、車両内の照明によって自分たちの顔が反射して見える。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>暗がりの中、外を覗けばクラゲが揺蕩っていた。<br>無数の脚をひらひらとたなびかせて上に、横に、かさを広げながら推進している。<br>彼らが泳いでいる空間ではいくつかの泡が下から上へと昇っていく。<br>きっとここは水中なのであろう。 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>クラゲがいるわ……ここは水中のようね……。 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>彩波ちゃんは、今のところ何も変わりない？ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>(彩波ちゃんの顔を覗き込むようにみます) </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>そうだね……うん、私は大丈夫！なんか、海の中にいるみたい……　 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>実際にここは海の中なのかしらね。 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>辺りをキョロキョロして車両全体を見渡します </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>日本で使われている動力集中式の電動列車だ。<br>壁のほとんどが窓で構成され、その下には横一列のソファが並んでいる。<br>濃い藍色のソファには自分たち以外の人間の姿はない。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>車両の左端に次の車両へ続くのだろう扉がついている。だが、反対の右側に扉はなく壁になっている。 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>私たちしか居ないようね。彩波ちゃんと、私の貸し切りの海中ツアーみたい。 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>そうかも〜！　じゃあ、じっくりクラゲウォッチングしちゃおうかな　 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>窓からクラゲを一緒に眺めようとする流れで、ふと広告が気になってみます </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>(ポスターもクラゲだったりするのかしら……) </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>通路の天井にぶら下がっている広告を見れば、細かく記事が書いてあるわけではないが何か文章が書かれているようだ。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>『ナイフのアレテーは“よく切れる事”、馬のアレテーは“足が速い事”、人間のアレテーは“魂をよりよいものにする事”。では、君のアレテーは？』 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>くらげって、ふよふよしててかわいいけど、毒があるから近づくな〜ってジンゴによく言われたなぁ……ん？ひかりさん、どうかしたの？　 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>確かに、触ってしまうと腫れてしまうわね。こんなに近くで見られるのも窓があるからこそね。……広告もクラゲなのかと思ってみたのだけど、問いかけが書いてあったの。 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>広告を手で示します </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>なになに？ </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>あれて……？ってなに？　 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>これって知識とかで振ったほうが良いですか！(PLは分からずググった) </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>＜人類学＞または＜知識/2＞でふれます！ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>じゃあ知識の1/2ふります！！ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>小数点切り上げなので48以下で成功やね〜 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>CCB&lt;=47 【知識/2】 (1D100&lt;=47) ＞ 60 ＞ 失敗</dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>OH` </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>ひかりさんでも知らないことがあると…… </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>人物学(初期値)試して良いですか(初期値だが) </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>しぬ　初期値1だけどどうぞ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>これで1クリしたら面白すぎる </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>CCB&lt;=1 【人類学】 (1D100&lt;=1) ＞ 95 ＞ 失敗</dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>出目高い </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>本当に知らなかったんやね…… </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>1クリと対局にある </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>んーと……つまり、得意なこと、って意味かな？ </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>私もアレテーが分からなくて……。ニュアンス的にはそうかもしれないわね。(私の得意なこと……？何があるかしら。) </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>(演劇は指導は行っても、今は演じなくても生きていけるから、今昔のように演じるのは難しいかもしれないわ。彩波ちゃんと笑って、生活することが得意かしら。) </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>ひかりさんには良いところがたくさんあるから、いっこに絞りきれないね！う〜ん……ひかりさんのアレテーかぁ……　 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>考えていたのだけど、今は久しく演じてないから、昔のように実際にお芝居するのは難しいかもしれなくて、彩波ちゃんと笑って生活することしか思いつかなかったわ。彩波ちゃんのアレテーなら沢山思い付くのだけどね、ふふっ。 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>え〜？むふふ……照れちゃうなぁ　 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>じゃあ、ひかりさんのアレテーは人を笑顔にすること！かも！　だって私、ひかりさんと一緒になってからず〜っとにこにこだもん </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>彩波ちゃん…… </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>私も彩波ちゃんと一緒になってから、ず〜っと笑顔よ。2人がもってるアレテーね、きっと。 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>おそろいってこと？うれしい！　 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>私も嬉しいわ。 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>左端に行くと、他の車両に行けるっぽいの。折角私達しか居ないから、他の車両からも、海を見てみない？ </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>うん！もしかしたら他にも何かあるかも〜 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>目星どうぞ！ </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>CCB&lt;=80 【目星】 (1D100&lt;=80) ＞ 94 ＞ 失敗</dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 83 ＞ 失敗</dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>扉には大きなガラスが貼られているが、車両内の照明が反射して暗く、向こう側が見えにくい。<br>窪んだ取っ手を横にスライドさせれば開くことが出来るだろう。 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>照明が反射して見えにくいわね。取っ手をスライドすれば開きそうだけど、外は海じゃないのかしら。開けても大丈夫かしらね…… </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>う〜ん……じゃあノックしてみる？　 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>そうしてみましょうか。 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>ノックします </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>特に反応はなく、カタン、カタンという音だけが響いている。 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>大丈夫 ……なのかも？ </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>何かあっても、ひかりさんは私が守るからね！　 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>ありがとう、私も彩波ちゃんを守るわね。 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>そっと開けてみましょうか。 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>そっと開けてみます </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>扉を開いて次の車両に向かうはずだった。<br>一歩外に踏み出せば耳が塞がれたように圧迫感がして何も聞こえなくなった。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>続いて肺が膨らんで、苦しくなって酸素の供給が難しい。<br>足が宙に浮いたかのように何も踏みしめるものがなくなり、前にも後ろにも進めない。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>まるで水中だ。体を包む重圧がぐったりとまとわりついて手を伸ばす事すら難しい。<br>口の周りの筋肉が痺れを切らして二酸化炭素を外へと逃がしてやるため、がぱりと口を開けた。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>ゴボゴボと低い音が振動として耳に届いて、目の前で水泡が列を成して上へと我先に昇って行った。<br>咥内の少ない酸素が少なくなって眩暈がする頃に手を引かれる感覚でその圧力から解放される。 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>こっち！　 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>彩波がひかりの手を取れば引っ張られ、謎の空間から解放される。<br>抑圧されていた肺が酸素を取り込むために体全部で空気を取り込む。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>喉が解放されてゲホゲホと咳き込めば彩波が「大丈夫？」と覗き込んでくるだろう。<br>幸いにも体に異変は見られない。服が濡れていたりすることもないが…なぜか不思議な感覚を覚えるだろう。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>SANc（1/1d2）、HP-1 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>はぁ……はぁ……ふぅ。ごめんね彩波ちゃん……ありがとう…… </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>1d100&lt;=66 【正気度ロール】 (1D100&lt;=66) ＞ 40 ＞ 成功</dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ 秋澤ひかり ] SAN : 66 → 65 </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ 秋澤ひかり ] HP : 9 → 8 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>ひ、ひかりさん……本当に大丈夫？　 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>なんか……あの時みたい…… </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>彩波ちゃんが手を取ってくれたから大丈夫よ。ありがとう。彩波ちゃんは怪我とかない？　 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>そうね、なんだかあの時を思い出すわ。 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>うん……私は大丈夫……。ひかりさん、無理しないでね？辛かったら座ってもいいから……　 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>彩波ちゃんが何もなくて良かった……もう大丈夫よ。息が出来なくなりそうだったけど、島の時も今も、彩波ちゃんが助けてくれて。彩波ちゃんのおかげで苦しくないわ。 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>よかったぁ……また何かあると大変だから、手つないでいこ！　 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>ええ、そうしましょう！ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>❚二両目<br>２人で手を繋いでなんとか車両間から抜け出した先にあったのは、先ほどと似たような車両だった。<br>がらんとしていて、自分たち以外に乗客はいない。<br>探索箇所（窓/車内案内/網棚/扉） </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>クラゲはみえるかしら。 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>窓をみます </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>先ほどの車両と同じく照明が反射して見えにくいことだろう。<br>目をよく凝らして見れば、またしてもふわふわと漂うクラゲの姿が見える。<br>先ほどとは種類が違うようで、膨らんだ脚を懸命に動かして泳いでいた。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>＜知識＞または＜生物学＞ふれます！ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>知識ふります！ </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>CCB&lt;=95 【知識】 (1D100&lt;=95) ＞ 58 ＞ 成功</dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>こちらのクラゲの種類はブルージェリーフィッシュと呼ばれる種類だ。<br>水色の体に太く短い脚が愛らしいことだろう。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>＜知識＞もう1回か＜英語＞ふれます！ </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>CCB&lt;=95 【知識】 (1D100&lt;=95) ＞ 2 ＞ 決定的成功/スペシャル</dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>英語のスラングでジェリーフィッシュとは『意気地なし、弱虫、腰抜け』と言った意味を持つ。これはクラゲがぶよぶよとした体で骨がないことから転じてそう言われているらしい。 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>さっきと違う種類のクラゲね。 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>んね。このクラゲ丸っこくてかわいい〜　 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>そういえば昔話では、宮城の乙姫さまを助けるために奮闘してた亀に嘘をついたことで、クラゲは骨なしにされたってケイゾウさんが言ってたなぁ　 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>そうなのね。見た目は可愛らしいけど、昔話やスラングでは、あまり良く言われていないのかしらね。 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>スラング？　 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>ええ、英語でクラゲをジェリーフィッシュというのだけど……そのクラゲがぶよぶよとした体で骨がないことから、ジェリーフィッシュという言葉自体を、意気地なしとか、弱虫、腰抜けというスラングで使われることもあると聞いたことあるわ。 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>ええ〜！？クラゲかわいそう……　 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>そっかぁ、でも日本語でも骨なしっていうもんね……。そういえば、ひかりさんは怖いものとか、ある？   </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>でもこういうのは、第三者が勝手に悪いように解釈したり、勝手にスラングにしたりしただけだと思うわ。クラゲからみたら、真実じゃないもの。だから、私はクラゲのスラングは使わないわ、と初めて聞いた時に思ったわね。 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>怖いもの……そうね、モノとか生き物で言うなら虫とかかしら。もっと概念的な事でいいなら、大切な人が悲しんだり、何処かに消えてしまったりすることが怖いと思うわ。 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>彩波ちゃんは、怖いものはある？ </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>うう……虫は私も苦手……。でも、虫もクラゲも、あっちからしたら頑張って生きてるだけなんだよね……   </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>島にいた時は高いところが怖かったし、今もあんまり得意じゃないけど……ひかりさん、あやなちゃん、学校の先生たち……周りの誰かが居なくなっちゃうのが一番怖いな。島のみんなのことをいつか忘れちゃうのかな、って思うのも怖いかも。だめだね、怖いものだらけだ </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>でもでも、ひかりさんにはひかりさんのアレテーがあるから私は大丈夫なのです！　 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>彩波ちゃんから私が離れることは無いし、彩波ちゃんが皆の事を大切にしていることはよく知ってるから、大丈夫よ。それに、島の皆のことも、忘れることはないと思っているし、彩波ちゃんが万が一忘れそうになる日が来ても、私が何度でも、見たり聞いたりした島の皆との思い出話をして、忘れないようにするわ。 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>私も彩波ちゃんが一緒なら、怖くないわ。 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>私たち2人でいれば無敵だね！ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>適当なタイミングで目星どうぞ！ </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>CCB&lt;=80 【目星】 (1D100&lt;=80) ＞ 9 ＞ スペシャル</dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>遠くの方でクラゲが一つ弾けたのが見えた。<br>それが目に入った瞬間、体が熱くなるのを感じる。<br>熱さは一瞬冷や汗のようにも感じられたが、足から背中を通って首筋を伝った熱が脳に到着するまではまるで光速だ。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>頭に熱が回ったと思えばブチ、と何かが切れたような音がした。<br>その音がしてからは脳内がひどく明瞭になった気がする。 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>ひ、ひかりさん！大丈夫！？　 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>彩波が焦ったような声を出す。<br>服の袖を引っ張って顔を拭われる。その服には血の色が滲んでいた。<br>どうやら自分は鼻血を出していたようだ。<br>SANc（0/1）、HP-1 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>1d100&lt;=65 【正気度ロール】 (1D100&lt;=65) ＞ 84 ＞ 失敗</dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ 秋澤ひかり ] SAN : 65 → 64 </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ 秋澤ひかり ] HP : 8 → 7 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>なんだか急に熱くなって……彩波ちゃんのお洋服も汚してしまったわ、ごめんね…… </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>ううん、そんなの気にしなくていいよ　 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>なんだかこの電車に乗ってから、変な感じがするの。彩波ちゃんは何ともない？ </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>う、うん……大丈夫だよ </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>何かあったら隠さないですぐ教えてね…… </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>うん……ひかりさんもね？ </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>ええ、もちろん。ありがとう。 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>よく車内をみようとした過程で、車内案内をみます！ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>電光掲示板が光のドットで文字を形作っている。<br>流れる文字の川は自分が読み上げる速度とちょうど合うようにスラスラと脳に入ってくる。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>『ここはクラゲの夢。あなたにふさわしい場をご用意しました。どうぞ束の間の歓談を楽しんで。』 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>＜知識＞または＜オカルト＞ふれます！ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>知識ふります！ </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>CCB&lt;=95 【知識】 (1D100&lt;=95) ＞ 19 ＞ スペシャル</dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>夢占いでクラゲの夢とは、漠然とした将来に対する不安や心配事を抱えている事を意味するとされている。 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>これが夢の世界だとしたら、これは将来への不安や心配事が反映された空間なのかしら…… </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>つぶやくように言います </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>夢かぁ……だとしたら私たちはどうして夢の中で逢えているんだろう？　 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>どうしてかしらね。私も、彩波ちゃんが居なくなってしまう事が怖いから、同じ不安を抱えていると逢えるのかしら。それとも大好き過ぎて、夢の中でも想いが通じたのかしら。 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>はいはいは〜い！平安時代では夢の中に好きな人が出てくるのは、相手が自分を思ってるからと考えられてたって、古文の先生が言ってました〜！　 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>じゃあ私達、相思相愛ね。 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>寝ても覚めても一緒だね　 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>ふふっ、そうね。 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>ふと窓に視線を向けますが、赤面した自分が映ってたので網棚に視線を逸らします </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>網棚には彩波のものでも、ひかりのものでもない、見知らぬカバンが置かれている。 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>あら、誰かのカバンが置いてあるわ。 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>彩波ちゃん、こんなカバン持ってないわよね。誰のかしら。 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>本当だ。誰かの忘れ物かなぁ　 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>名前とか書いてあるかしら。手に取って、見てみるわね。 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>手に取ってカバンをみてみます </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>鞄を取って見てみれば、中に冊子が二冊入っていた。 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>冊子……みたいね。 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>冊子を読みます! </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>▸ 『PSI とは（人間の限界について）』と題された冊子<br>超能力とは、通常の人間にはできないことを実現できる特殊な能力のこと。<br>今日の科学では合理的に説明できない超自然な能力を指すための名称であり、超感覚的知覚（ESP）と物体に力を及ぼし得るサイコキネシス（PK）を合わせて PSI（サイ）という名称をここでは使用する。<br>このような能力についての言及は古代より存在しており、古くは仏教において『神通力』として知られている。<br>・超感覚的知覚（ESP）<br>五感（視覚、聴覚、臭覚、味覚、触覚）や論理的な類推などの通常の知覚手段を用いずに、外界に関する情報を得る能力。<br>念話、念聴、透視、未来予知といったものがこれに類される。<br>・サイコキネシス（PK）<br>意思の力だけで手を触れずに物体を動かす能力。<br>念動力、瞬間移動、空中浮遊、念写などがこれに類される。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>▸ 『PSI 所持者についての研究レポート』<br>超能力を研究するにあたって PSI を所持するものと所持しないもので比較実験を行う必要がある。<br>まず前提としてこれらは人類誰しもが潜在能力として持っているのではないかと考えられる。<br>この研究が超心理学と分類されるように、あくまでも「心理学的事象」であり人間の生理的心理的状態を極限まで昂らせること（視覚を制限する、聴覚を制限する、触覚を制限する…など普段当たり前のように使用している感覚や自由を封じるなど）によって発動するのではないかと予測が立てられる。<br>霊感などのいわゆる〔第六感〕に関しても頭蓋骨に穴が開いている者が所持している割合が高く（骨の未発達な幼児/トレパネーション被験者など）、つまり不足している部分を補うために他の能力が顕現するのではないか。<br>被験者へこれらの実験を行う場合は強く信頼しているであろう者を付き添わせ、統計のために危うい道へ迷わせることなく十分な配慮を与えることが重要である。 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>超能力かぁ……ひかりさんはもし超能力を持ってたら、何がしたい？　 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>超能力ね…… 考えたことなかったわ。でももし使えるなら、何か彩波ちゃんの役に立つ力が良いわね。テレパシーと瞬間移動が出来たら、外で彩波ちゃんが困った時も駆けつけることが出来るかしら。 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>ひかりさんかっこいい！ドラマみたい！　 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>超能力に関するお芝居はしたことあっても、映像班のスタッフの方々のCGやエフェクト頼りだったから、あまり想像がつかないのよね……  </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>彩波ちゃんは、超能力が使えたら何がしたいかしら？ </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>う〜ん、そうだなぁ〜……前にドラマで見たサイコメトラーの探偵がカッコよかったから憧れちゃうな〜とも思うし、念力が使えたら同時にたくさんの服が作れるかもだし〜……　 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>あ！手をかざすだけで病気や怪我を治せるやつ！あれがいいな〜！そしたらひかりさん、もう病気の心配しなくていいもん </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>彩波ちゃん……優しいわね、ふふっ。 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>彩波ちゃんと暮らすようになってから、本当に病気することも減ったのよ。でも、この先どんな病気もしたくないし、彩波ちゃんとずっと一緒に居たいから、病気で命を落とすようなこともしたくない。そう考えると、病気や怪我の心配が無くなるのは大きいわね。 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>念力も超能力の一種なら、彩波ちゃんと私、彩波ちゃんの周りの皆が健康で末永く暮らせるように念じるわ。 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>いいね！頑張れば世界を平和にもできちゃうかも〜 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>ふふっ、そうかもしれないわね。 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>(この空間は不思議な空間ね……あそこに扉が見えるけど、あの扉を開けたらまた何か起こるのかしら。) </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>窓のクラゲをぼんやり眺めています </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>……ひかりさん。ひかりさんは、超能力が手に入る方法があったら、そのために頑張ろう！って思う？　 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>その代償にもよるかもしれないわ。もしその超能力を得る為に、彩波ちゃんを危険な目に巻き込んでしまったり、悲しませてしまったりするなら、ありのままを大切にするけども、もしそういう代償が無くて、得に行く事で彩波ちゃんとのより良い未来が待ってるなら、頑張ると思うわ。 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>……そっか。そうだよね！次の車両も見てみよ！また違うクラゲがいるかも　 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>ええ、見てみましょう。 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>扉に進みます </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>扉を開けて次の車両に向かうために一歩を踏み出す。<br>そうすると今度は体が軽くなった。<br>足元をすくわれたように不安定に前のめりになったが空中で前転をして、どこかにぶつかることはなかった。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>周りはただただ真っ暗な空間で虚無と形容するのが正しいのかもしれない。<br>光も影もないのにただ自分の体だけがハッキリと自認できた。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>だが認識したと同時に顔の皮膚が突っ張り、四肢の感覚が不明瞭になる。<br>肺はベコベコと音を立てて中身の酸素だけではない、空気全てが奪われたような心地で息苦しさを越えて眩暈がした。<br>胃の中が逆流する味がして鼻の奥が痛くなる。<br>生理的な涙が止まらなくなって口の中の水分が抜けていく。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>酸素不足で目の前が真っ暗になった。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>ここで目星どうぞ！ </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>CCB&lt;=80 【目星】 (1D100&lt;=80) ＞ 39 ＞ 成功</dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>目を瞑る前に遠くの方で真っ赤な星雲が見えた。 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>ひかりさん！　 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>自身の名前を呼ぶ声が聞こえたかと思えば、茹っていたようにぼやけていた脳が数度揺すられて意識がはっきりとした。<br>脳みそをかき回された感覚だけが残ったが、視界はいやにクリアだった。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>彩波は心配そうに顔を覗き込んでいる。 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>大丈夫？ちょっと休もう？　 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>そう言って優しい手つきで背中に腕を回して抱き締められる。<br>小さな子どもをあやすように頭の形に添って掌で撫でられれば彩波の体温は不快には感じられなかった。<br>SANc（1/1d2）、HP-1 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>ううーん……彩波ちゃん……ありがとう…… </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>1d100&lt;=64 【正気度ロール】 (1D100&lt;=64) ＞ 1 ＞ 成功</dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ 秋澤ひかり ] SAN : 64 → 63 </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ 秋澤ひかり ] HP : 7 → 6 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>❚ 三両目<br>これまでに見た車両となんら変わりのない光景が広がっていた。<br>壁沿いに設置されたロングソファの座席、天井から下がる吊り革、網棚に大きな窓。<br>清潔さすら感じるほど白い床の上には人の気配などやはりなくて、この空間には彩波とひかり の二人だけだった。<br>探索可能箇所（窓/中吊り広告/座席/扉） </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>ぼんやりと窓の外を眺めます </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>窓の外は暗く、車両内の照明が反射して見えにくい。<br>ガラスに映る自分の顔の背後に彩波の顔が見える。どこか微笑んでいるようにも見えた。<br>外の景色では相変わらずビニールのようなクラゲが漂っていた。<br>流れに身を任せて揺蕩うクラゲは何を考えているのだろうか。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>＜知識＞または＜生物学＞ふれます！ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>知識ふります！ </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>CCB&lt;=95 【知識】 (1D100&lt;=95) ＞ 58 ＞ 成功</dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>視界に映るクラゲの種類はサムクラゲであろうと推測できる。<br>このクラゲは肉食であり、プランクトンの他に小さなクラゲも好んで食べるとされている。 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>サムクラゲね。 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>初めて見る形かも〜。足がヒラヒラしてるね </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>クラゲをくわしく見るなら目星どうぞ！ </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>CCB&lt;=80 【目星】 (1D100&lt;=80) ＞ 37 ＞ 成功</dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>触手を流れに任せて泳いでいるクラゲの形が少し異様にも感じる。<br>血管のないその体が何かによって脈動している、いや変形しているように見える。<br>縦横無尽に、傘の内側で何かが暴れているようにフォルムを変えている姿は通常知られるクラゲとは程遠いだろう。<br>生きている、その事実がただただ不気味でこの生物の異様さ、そしてこの空間の気味の悪さを再度思い出させる。<br>SANc（0/1） </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>1d100&lt;=63 【正気度ロール】 (1D100&lt;=63) ＞ 86 ＞ 失敗</dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ 秋澤ひかり ] SAN : 63 → 62 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>(不気味だわ……) </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>ひかりさん……まだ気分悪い？　 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>彩波ちゃん、少し座っても良いかしら？ </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>うん、無理しないでね？ </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>身体はあの一瞬で大丈夫なのだけど、頭が追い付いてなくて。ありがとう。 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>座席に座る為に座席をみます！ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>誰かの忘れ物だろうか、手帳が置いてある。<br>カレンダーのあとの自由欄に走り書きではあるが達筆な字で文章が書かれており、読み上げることは可能だ。 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>誰かの手帳だわ。 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>手に取って読みます </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>▶ 『［AI（人工知能）の存在意義］<br>Artificial Intelligence…いわゆる AI、人工知能とは計算という概念とコンピュータを用いて「知能」を研究する学術的分野である。<br>私は「言語の理解や推論、問題解決などの知的行動を人間に代わってコンピューターに行わせる技術」を主として書き留める。<br>人間の知的能力をコンピュータ上で実現するために膨大な人数の性格・行動パターン・趣味嗜好・喜怒哀楽をデータとして入力し、「一般的な考え」を統計した平均から算出し基礎を作り上げる。<br>そして第三者（A とする）を実験に招き、その人間が思い浮かべた一人の個人（B とする）を Aの考える B の性格、行動パターン、趣味嗜好、喜怒哀楽の表現方法を抽出して、基礎を応用し、B の疑似人格として A の脳内へ出現させる。<br>その際に A へ知らせず B と出会わせれば人工知能そのものを本人だと錯覚させることはできるだろうか。<br>A の反応を見つつ、AI 研究の方へデータを書き写すことを忘れない。<br>疑似人格は本物の人間になり得るだろうか？機械は、人間を超えることが出来るだろうか。』 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>B の疑似人格として A の脳内へ出現させる……AI…… もしかして、今私が見てるのが、彩波ちゃんの擬似人格なの？ </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>…………　 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>彩波は困ったように笑っている。 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>そう、なのね。何となく、違和感があったのよ。言葉で上手く形容出来ない違和感が…… </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>擬似人格じゃない、彩波ちゃんは無事かしら？ </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>……うん。私はちゃんと待ってるはずだよ </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>良かった。……今私の目の前にいるのは、私の記憶から出来た彩波ちゃんなのよね。今は2人でお話しましょう。 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>ふと広告に目を向けます </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>白い背景に黒い文字でひとこと、『推察ができる者は多いが、決断を下せる者は少ない。』と書かれている。 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>(何か意味がありそうね……) </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>突然、天井の照明が明滅する。世界がまばたきをしたのかと思うほど真っ暗になって、そのあとすぐに弱く光ってまた強く光ったと思えば、真っ暗になる。<br>続けて大きく車両が揺れた。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>進行方向は変わらないまま縦に一度、横に三度、斜め方向に二度。<br>バランスを崩した体は床に足を付けていられずにコーティングの上を滑った。<br>接地面の床と肌が摩擦を起こして皮膚がひりつくのを感じる。<br>痛みを先に覚えたあと、バキリという音が耳に届いた。 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>危ない！　 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>彩波の大きな声と共に体を押される。<br>こちらに伸ばされた手のひらを分断するかのように上から天井と、横から瓦礫と、後ろから窓ガラスの破片が一斉に彩波へ向けて襲い掛かった。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>車両が破損する勢いで揺れた際に、衝撃で体が浮いたかと思えば目の前にいたはずの彩波は無機物たちに押しつぶされている。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>しかし、瓦礫が落ちてきたということは自分たちが今いる車両も無事ではない。<br>車両の外に広がっていたらしい水が自分たちの足元に流れ込んできた。<br>崩れた車体の壁がなんとか狭い空間を作り、息をすることは可能だが足元からせり上がってくる水は段々とこの空間を狭めていく。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>一か所だけではない隙間から滝のように水が流れ込んでくるため、一刻も早くここから抜け出して水中から上がらなければ命はないだろう。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>大きな鉄の板や倒された車両の壁、ひっくり返ったソファや細かく砕けたガラスの破片が彩波の体に被さっており、彩波ももがいてはいるが苦しそうにしているだけで抜け出すことは難しそうだ。 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>さい、はちゃん……？ </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>ひかりさん……大丈夫？咄嗟だけど、助けられてよかったぁ……　 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>……さっきも話したけど、“私”はひかりさんが居なくなったり、傷付いたりしちゃうのが怖いの。今ひかりさんに居なくなられたら困るから、とかじゃなくてね </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>彩波は額に脂汗を描きながらもへらりと力なく笑っている。<br>眉尻を下げて申し訳なさそうに、だけど瞳はしっかりとこちらを見た。 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>記憶から出来た彩波ちゃんだとしても、彩波ちゃんが苦しんでる姿を見るのはつらいわ。手当とか出来ないかしら？ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>応急手当とかってふれますか？なんか刺さってるやつを良い感じに出来る技能…… </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>手当をしようとしても彩波は首を横に振りますね…… </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>早くここから逃げて。……目を覚まして。大丈夫、何も怖いことなんてないから。私は、ひかりさんと一緒にここから出ることは出来ないけど </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>このままだと、ひかりさんも危ない </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>そんな…… </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>(決断を下すってこういうことなのかしら……) </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>(言わばここは作られた空間であって、今彩波ちゃんが傷付いているのも、一種の幻覚のようなものなのよね。だから頭では彩波ちゃんは無事だと分かっていても、まるで彩波ちゃんを置いていくみたいで、そんなこと私は……) </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>(……でも、今ここで私も巻き込まれたら、本当に彩波ちゃんを置いていくことになってしまう。彩波ちゃんと離れないって決めたの。彩波ちゃんとまた明日も一緒に、歳を重ねるのよ。だからごめんなさい、記憶から出来た彩波ちゃん……) 分かったわ……逃げる。 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>……うん、それでいいんだよ。絶対恨んだりしないから、大丈夫 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>でも……またいつか会えたら、たくさん話そうね。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>足元へ伝っていた水はいつの間にか嵩を増して口元へ迫っていた。<br>蹲っている彩波の体に残っていた酸素が尽きかけているのか、迫りくる水へ大きな水泡を吐きながらガボガボと音を立てている。 </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>……、………… </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>聞き耳をどうぞ！ </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>CCB&lt;=80 【聞き耳】 (1D100&lt;=80) ＞ 43 ＞ 成功</dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>ひかりさんにこんなに愛してもらえてる、本物の私が……ちょっと羨ましいな </dd></dl>
+<dl style="color:#3f51b5" class="main"><dt>坂口 彩波</dt><dd>瓦礫を蹴って、振り返らずに……上に進んで。ここは少し、深い……けど、帰れないわけじゃ、ないから…… </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>新しい記憶を重ねるから、また夢の中で会いましょう。現実に返してもらわないと、困っちゃうけどね……。お話出来て良かった。ありがとう、記憶から出来た彩波ちゃん…… </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>決断して上に進みます </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>崩れ落ちる瓦礫を蹴って上へと昇る。<br>車両の形をしていた鉄の塊から抜け出せばその上では水面が光に反射して揺れていた。<br>…ふと、後ろを振り返れば車両の足元に線路はなかった。<br>鉄くずと化した置物にクラゲに見えていたものたちは群がっていく。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>振り切るように首を上へと向けた。<br>光の方向に進むために。<br> <br>だが、再度視線を向けた先に光はなかった。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>気付けば大きな、大きな大きな影が眼前に迫っていた。<br>それはなんだったのだろうか。<br>波立って震える皮膚らしき体面のおかげでかろうじて生物なのだと理解することが出来た。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>だが水に揺られてざわついた影は泥のような粘性を持って手を伸ばすようにこちらへと近付いてくる。<br>溶け出す影の黒からひとつ、ふたつと何かが生まれていく。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>それは数えることのできない無数の塊で、自分へ向かって近付いてくると思えば眩暈がした。<br>自分より大きな生物に捕食されるという感覚を肌で覚える。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>弱肉強食という単語をこのような状況で思い出す。<br>腐敗したような死の冷たさと同時に目の前で生み出される膨大なエネルギー量に押しつぶされそうだ。<br> <br>【自存の源、造物主であるウボ＝サスラを目撃した探索者はSANc 1d6/2d10】 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>ﾋｴｯ </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>1d100&lt;=62 【正気度ロール】 (1D100&lt;=62) ＞ 51 ＞ 成功</dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>1D6  (1D6) ＞ 3</dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ 秋澤ひかり ] SAN : 62 → 59 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd> </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd> </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>ごめん間違えた😭 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>どこかから落下するような浮遊感に見舞われて体がガクッと大きく震えた。<br>体は無事だが脳が疑似衝撃に驚いて一瞬ここがどこだか認識できなかった。 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>問題ないですわ〜！ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>自分は家のソファでうたた寝をしていて、近くには画面がついたままのスマホがあった。<br>どうやら寝落ちていたようだ。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>ブーッ、とスマホが震えた。<br>画面には「ご協力ありがとうございました。」とだけ件名が書かれたメールが届いていた。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd><br>「　秋澤ひかり　様<br> <br>この度はマホロバPSI研究所の実験にご協力頂きありがとうございました。<br>当初の目的であったPSIの発現には至りませんでしたが、貴重なデータを取らせて頂きました。<br>当研究所のさらなる発展のためと、今後の実験の参考にさせて頂きます。<br>つきましてはひかり様へお礼として後ほど金券をお贈り致しますのでしばしお待ちください。<br>それではゆっくりとお体を休めてください。<br>重ねて、ご協力ありがとうございました。<br> <br>マホロバPSI研究所　」 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>これは一体何だったのかしら…… </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>続けてまたスマホの通知音が鳴る。<br> <br>差出人は彩波からのようで、内容は「今部活終わったよ〜！何か買って帰るものある？」といったものだった。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>今まで見ていた光景は夢だったのだろうか？<br>けれど体は濡れていないし、彩波とも連絡がついている。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>少しだけ頭痛がするが、それでもいやに冴え渡っている気がした。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>Call of Cthulhu<br>【　さいのつき　】<br> <br>エンド3　賽<br>探索者　　生還<br> <br>生還報酬<br>SAN値回復　　　　　　：　2d10<br>クトゥルフ神話技能　　：　+1%<br>好きな技能値　　　　　：　+1d10<br>お礼の金券　　　　　　：　50000円分 </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>2D10 (2D10) ＞ 16[9,7] ＞ 16</dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>ぅゎ出目っょぃ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>出目が良い </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ 秋澤ひかり ] SAN : 59 → 75 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>SAN値プラマイプラスで草 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>めっちゃ回復した </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>好きな技能、語学(英語orフランス語)で迷い中 とりあえずサイコロ振ります！ </dd></dl>
+<dl style="color:#009688" class="main"><dt>秋澤ひかり</dt><dd>1D10  (1D10) ＞ 3</dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>ボンジュールかハローか…… </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>フランス語にしようかな　+3の伸び代が、勉強中っぽいので </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>KP</dt><dd>いいな　勉強中のフランス語感 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ナフ</dt><dd>彩波ちゃんの夢を支えるわよ！！ </dd></dl>
+
+</div>
+<footer></footer>
+
+<script>
+const Hide = (checkbox) => {
+  const elmntTarget = document.getElementsByClassName(checkbox.id)
+  for (let intCount = 0; intCount < elmntTarget.length; intCount++) {
+    const message = elmntTarget[intCount]
+    const contexts = message.className.split(' ')
+    let elmntChecked = checkbox.checked
+    contexts.forEach((context) => {
+      const contextCheckbox = document.getElementById(context)
+      if (contextCheckbox) {
+        elmntChecked &= contextCheckbox.checked
+      }
+    })
+    message.style.display = elmntChecked ? 'none' : ''
+  }
+}
+</script>
+</body>
+</html>
